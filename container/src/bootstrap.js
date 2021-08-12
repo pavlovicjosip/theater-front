@@ -1,3 +1,4 @@
-import "movies/MoviesIndex";
+import 'movies/MoviesIndex';
+import 'favorites/Favorites';
 
-console.log("Container!");
+console.log('Container!');
