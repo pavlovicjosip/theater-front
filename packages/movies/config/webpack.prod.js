@@ -9,12 +9,12 @@ const prodConfig = {
 	mode: 'production',
 	output: {
 		filename: '[name].[contenthash].js',
+		publicPath: './movies/latest/',
 	},
 	plugins: [
 		new ModuleFederationPlugin({
 			name: 'movies',
 			filename: 'remoteEntry.js',
-			publicPath: './movies/latest/',
 			exposes: {
 				'./Movies': './src/bootstrap',
 			},
