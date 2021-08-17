@@ -14,6 +14,7 @@ const prodConfig = {
 		new ModuleFederationPlugin({
 			name: 'movies',
 			filename: 'remoteEntry.js',
+			publicPath: './movies/latest/',
 			exposes: {
 				'./Movies': './src/bootstrap',
 			},
