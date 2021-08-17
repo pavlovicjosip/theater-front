@@ -55,7 +55,7 @@ export default function Movies() {
 
 	return (
 		<React.Fragment>
-			<Container className={classes.filterContainer}>
+			{/* <Container className={classes.filterContainer}>
 				<FormControl variant="filled" className={classes.formControl}>
 					<InputLabel id="demo-simple-select-filled-label">Filter</InputLabel>
 					<Select
@@ -69,7 +69,8 @@ export default function Movies() {
 						<MenuItem value={30}>Test2</MenuItem>
 					</Select>
 				</FormControl>
-			</Container>
+			</Container> */}
+
 			<Grid className={classes.root} container spacing={3} direction="row">
 				{movies.map((movie) => (
 					<Box m={2} key={movie.id}>

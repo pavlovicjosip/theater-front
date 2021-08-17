@@ -1,5 +1,5 @@
-import { mount } from 'movies/Movies';
 import React, { useRef, useEffect } from 'react';
+import { mount } from 'movies/Movies';
 
 export default () => {
 	const ref = useRef(null);

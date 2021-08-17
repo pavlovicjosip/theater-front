@@ -17,7 +17,6 @@ const prodConfig = {
 			remotes: {
 				movies: `movies@${domain}/movies/latest/remoteEntry.js`,
 			},
-			shared: packageJson.dependencies,
 		}),
 	],
 };

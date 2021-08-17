@@ -18,7 +18,6 @@ const prodConfig = {
 			exposes: {
 				'./Movies': './src/bootstrap',
 			},
-			shared: packageJson.dependencies,
 		}),
 	],
 };
