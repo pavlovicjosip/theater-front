@@ -1,13 +1,13 @@
 import React from 'react';
 import AppBar from '@material-ui/core/AppBar';
-import Button from '@material-ui/core/Button';
+import { Button } from '@material-ui/core';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { Link as RouterLink } from 'react-router-dom';
-import { useStyles } from '../styles/Header-style';
+import { useHeaderStyles } from '../styles/HeaderStyle';
 
 export default function Header({ signedIn, onSignOut }) {
-	const classes = useStyles();
+	const classes = useHeaderStyles();
 
 	const onClick = () => {
 		if (signedIn && onSignOut) {

@@ -1,50 +1,21 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+import { IconButton } from '@material-ui/core';
 import Card from '@material-ui/core/Card';
+
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardHeader from '@material-ui/core/CardHeader';
 import CardMedia from '@material-ui/core/CardMedia';
 import Collapse from '@material-ui/core/Collapse';
-import { red } from '@material-ui/core/colors';
-import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
+import clsx from 'clsx';
+import { useMovieCardStyles } from '../styles/MovieCardStyle';
+import ShareIcon from '@material-ui/icons/Share';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import FavoriteIcon from '@material-ui/icons/Favorite';
-import ShareIcon from '@material-ui/icons/Share';
-import clsx from 'clsx';
-
-const useStyles = makeStyles((theme) => ({
-	root: {
-		width: 250,
-		minHeight: 450,
-		display: 'grid',
-	},
-	title: {
-		fontSize: '.5rem',
-	},
-	media: {
-		height: 0,
-		paddingTop: '56.25%',
-		backgroundSize: 'contain', // 16:9
-	},
-	expand: {
-		transform: 'rotate(0deg)',
-		marginLeft: 'auto',
-		transition: theme.transitions.create('transform', {
-			duration: theme.transitions.duration.shortest,
-		}),
-	},
-	expandOpen: {
-		transform: 'rotate(180deg)',
-	},
-	avatar: {
-		backgroundColor: red[500],
-	},
-}));
 
 export default function MovieCard(props) {
-	const classes = useStyles();
+	const classes = useMovieCardStyles();
 	const [expanded, setExpanded] = React.useState(false);
 
 	const handleExpandClick = () => {
