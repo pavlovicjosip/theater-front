@@ -12,6 +12,7 @@ export default () => {
 		<BrowserRouter>
 			<StylesProvider generateClassName={generateClassName}>
 				<div>
+					<div>test</div>
 					<Header />
 					<MoviesApp />
 				</div>
