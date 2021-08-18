@@ -23,8 +23,7 @@ export default function Header({ signedIn, onSignOut }) {
 						Theater
 					</Typography>
 					<Button
-						variant="contained"
-						color="primary"
+						variant="outlined"
 						className={classes.link}
 						component={RouterLink}
 						to={signedIn ? '/' : '/auth/signin'}
